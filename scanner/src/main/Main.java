@@ -30,13 +30,21 @@ public class Main {
             case 275:
                 System.out.println("(KEY , " + token.toString() + ")");
                 break;
+            case 294:
+                System.out.println("(STR , " + token.toString() + ")");
+                break;
             case 13:
                 break;
+            case 309:
+                break;
             default:
-                System.out.println("(SYM , " + token.toString() + ")");
+                if (token.tag >= 275 && token.tag < 314) {
+                    System.out.println("(KEY , " + token.toString() + ")");
+                } else
+                    System.out.println("(SYM , " + token.toString() + ")");
                 break;
             }
 
-        } while (lexer.getPeek() != '\n');
+        } while (lexer.getPeek() != '\0');
     }
 }
