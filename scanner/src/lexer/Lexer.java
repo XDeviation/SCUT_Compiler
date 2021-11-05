@@ -71,6 +71,12 @@ public class Lexer {
             }
         }
 
+        // @
+        if (peek == '@') {
+            throw new Error(
+                String.format("ERROR %d:%d: unsupport char", line, column));
+        }
+
         // comment
         if (peek == '/') {
             readch();
