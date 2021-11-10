@@ -170,7 +170,7 @@ public class Lexer {
         // number
         if (Character.isDigit(peek)) {
             int v = 0;
-            if (peek == 0) {
+            if (peek == '0') {
                 // hex number
                 readch();
                 if (peek == 'x' || peek == 'X') {
