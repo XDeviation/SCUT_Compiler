@@ -1,0 +1,8 @@
+	stmt : while begin
+	stmt : if begin
+	stmt : for begin
+	 assignment 
+	stmt : for end
+	stmt : if end
+	stmt : while end
+
