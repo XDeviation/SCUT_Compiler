@@ -1,0 +1,10 @@
+L1:	iffalse a < b goto L3
+	iffalse c > b goto L3
+L4:	min = a
+L3:	t1 = min + a
+	iffalse t1 < c goto L6
+	if a < c goto L5
+L6:	iffalse b < c goto L2
+L5:L7:	a = a + 1
+	goto L3
+L2:

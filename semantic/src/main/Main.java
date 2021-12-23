@@ -12,7 +12,7 @@ import lexer.Lexer;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        File file = new File("input/test1.txt");
+        File file = new File("test/test1.txt");
         Reader reader = null;
         reader = new InputStreamReader(new FileInputStream(file));
         Lexer lex = new Lexer(reader);
